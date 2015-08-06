@@ -1,7 +1,86 @@
-@body-color: red;
+@jumbo-header: #fff;
+@footer-block: black;
+@third-color: #26A65B;
 
-@jumbotron-width: cover;
 
-body {
-	background-color: @body-color;
+.jumbotron {
+	background-size: cover;
+	height: 545px;
+	background-image: url(fp_landing_images/appwithcoffee.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
+
+.navbar {
+  background-color: transparent;
+  background: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+ background-image: url(fp_landing_images/chachinglogo.png);
+
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: lowercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+.jumbotron {
+	h1 {
+		color: @jumbo-header;
+		text-align: center;
+		margin-top: 80px;
+	}
+}
+
+.marketing .col-lg-4 {
+	text-align: center;
+}
+
+
+footer {
+	background-color: @footer-block;
+	height: 200px;
+}
+
+.cta {
+
+	background-color: @third-color;
+	height: 300px;
+}
+
+
+/* opaque class which will be attached on scroll */
+
+.navbar.opaque {
+  background-color: white;
+  background: white;
+  transition: background-color 1s ease 0s; /* Transition effect to make it fade in (optional) */
+  box-shadow: 0px 0px 4px #969696;
+}
+.navbar.opaque .navbar-brand {
+  color: #969696;
+  transition: color 1s ease 0s;
+}
+.navbar.opaque .navbar-nav > li > a {
+  color: #969696;
+  transition: color 1s ease 0s;
+}
+.navbar.opaque .navbar-nav > li > a:active {
+  text-decoration: underline;
+}
+
+
