@@ -1,6 +1,8 @@
 @jumbo-header: #fff;
 @footer-block: black;
-@third-color: #26A65B;
+@green-color: #26A65B;
+@logo: "fp_landing_images/chachinglogo.png";
+@logo-alt: "fp_landing_images/chachinglogoalt.png";
 
 
 .jumbotron {
@@ -19,18 +21,40 @@
   z-index: 100;
   margin-bottom: 0;
   border-radius: 0;
+
 }
 
 .navbar-default .navbar-brand {
- background-image: url(fp_landing_images/chachinglogo.png);
+ background-image: url(@logo);
+ text-indent: -9999px;
+ font-size: 0px;
+ width: 100px;
+ height: 39px;
+ float: left;
 
+}
+
+.navbar .container-fluid .navbar-brand {
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+.navbar-right {
+	float: right:!important;
+	margin-right: 6px;
+}
+
+.navbar-nav {
+	margin-top: 6px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: white;
-  font-weight: 500;
   font-size: 1em;
-  text-transform: lowercase;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
@@ -58,7 +82,7 @@ footer {
 
 .cta {
 
-	background-color: @third-color;
+	background-color: @green-color;
 	height: 300px;
 }
 
@@ -72,7 +96,10 @@ footer {
   box-shadow: 0px 0px 4px #969696;
 }
 .navbar.opaque .navbar-brand {
-  color: #969696;
+  background-image: url(@logo-alt);
+  width: 100px;
+  height: 39px; 
+  float: left;
   transition: color 1s ease 0s;
 }
 .navbar.opaque .navbar-nav > li > a {
@@ -81,6 +108,11 @@ footer {
 }
 .navbar.opaque .navbar-nav > li > a:active {
   text-decoration: underline;
+}
+
+.btn-outline {
+	color: orange;
+	border: 1px solid orange;
 }
 
 
