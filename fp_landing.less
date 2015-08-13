@@ -25,6 +25,33 @@
 
 }
 
+#navbar {
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+.navbar-default .navbar-collapse {
+  background-color: @green-color;
+  height: 300px;
+}
+}
+
+@media (max-width: 768px) {
+ .navbar-nav {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    margin-left: -122px !important;
+}
+}
+
 .navbar-default .navbar-brand {
  background-image: url(@logo);
  text-indent: -9999px;

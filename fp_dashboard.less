@@ -4,7 +4,9 @@
 @logo: "fp_landing_images/chachinglogo.png";
 @logo-alt: "fp_landing_images/chachinglogoalt.png";
 
-
+body {
+  background-color: rgb(245,245,245);
+}
 
 .navbar-brand {
 	background-image: url(@logo);
@@ -16,6 +18,24 @@
  	background-repeat: no-repeat;
  }
 
+ .organization {
+  height: 200px;
+  display: inline-block;
+ }
+
+ .navbar-default {
+  border: none;
+ }
+
+ .navbar-default .navbar-nav li>a{
+  color: white;
+ }
+
+ .navbar-default .navbar-nav .active a {
+  background-color: white;
+  color: @green-color;
+ }
+
  .navbar-header {
  	background-color: @green-color;
  }
@@ -24,3 +44,53 @@
  	background-color: @green-color;
  }
 
+ 
+@media (min-width: 768px) {
+  .col-md-2.sidebar {
+    max-width: 13%;
+    min-width: 150px;
+    padding-right: 0px;
+  }
+.sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+    .sidebar-nav {
+    background-color: @green-color;
+    height: 100%;
+    display: block;
+
+  }
+}
+
+
+.top-nav {
+  height: 135px;
+  display: block;
+  background-color: white;
+}
+
+.col-md-10.content {
+  padding-left: 0;
+}
+
+
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
