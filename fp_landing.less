@@ -1,8 +1,12 @@
 @jumbo-header: #fff;
 @footer-block: black;
 @green-color: #26A65B;
+@orange-color: #ed6f00;
 @logo: "fp_landing_images/chachinglogo.png";
 @logo-alt: "fp_landing_images/chachinglogoalt.png";
+@app-md: "fp_landing_images/appstore.png";
+@app-lg: "fp_landing_images/appstorelg.png"
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 
 .jumbotron {
@@ -66,13 +70,14 @@
 
 .navbar-right {
 	float: right:!important;
-	margin-right: 6px;
+	margin-right: 8px;
 }
 
 .navbar-nav {
 	margin-top: 6px;
 	margin-right: auto;
 	margin-left: auto;
+
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -102,13 +107,14 @@
 
 footer {
 	background-color: @footer-block;
-	height: 200px;
+	height: 500px;
 }
 
 .cta {
 
 	background-color: @green-color;
 	height: 300px;
+  text-align: center;
 }
 
 
@@ -141,7 +147,84 @@ footer {
 }
 
 .featurette-divider {
-	margin: 40px 0;
+	margin: 65px 0;
 }
 
+.btn-md {
+  background-color: @orange-color;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 0;
+  border: none;
+  margin-top: 8px;
+  margin-right: 6px;
+}
+
+.btn-md:visited {
+  background-color: @orange-color;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 0;
+  border: none;
+  margin-top: 8px;
+  margin-right: 6px;
+}
+
+.btn-md:hover {
+  background-color: @green-color;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 0;
+  border: none;
+  margin-top: 8px;
+  margin-right: 6px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+  width: 26px;
+  height: 3px;
+}
+
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar.opaque .icon-bar {
+  background-color: @green-color;
+}
+
+.icon_piechart {
+  font-size: 140px;
+  color: @green-color;
+}
+
+.icon_lock-open_alt {
+  font-size: 140px;
+  color: @green-color;
+}
+
+.icon_folder-open_alt {
+  font-size: 140px;
+  color: @green-color;
+}
+
+.downloadapp {
+  background-image: url(@app-md);
+  width: 200px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+
+}
+
+.social_facebook_square {
+  font-size: 80px;
+}
 
