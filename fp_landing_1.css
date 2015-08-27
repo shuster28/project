@@ -14,10 +14,29 @@
 .jumbotron {
     background-size: cover;
     height: 545px;
-    background-image: url(fp_landing_images/girlusingapp2.jpg);
+    background-image: url(fp_landing_images/girlusingapp.jpg);
     background-repeat: no-repeat;
     background-position: center
 
+}
+.transparent-background {
+    position: relative;
+}
+
+.transparent-background:before{
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+content: ' ';
+z-index: 1;
+background-color: rgba(0,0,0, .2);
+}
+
+.transparent-children {
+    position: relative;
+    z-index: 2;
 }
 .navbar {
     background-color: transparent;
@@ -44,7 +63,7 @@
 @media (min-width: 768px) {
     .navbar-center {
         position: absolute;
-        left: 50%;
+        left: 47%;
         text-align: center;
         margin-left: -122px!important
    }
@@ -95,14 +114,14 @@ li a {
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: 'Roboto';
     text-transform: uppercase;
     margin: 0 auto
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active {
     color: #fff;
-    text-decoration: underline
+    border-bottom: 2px solid #ed6f00;
 }
 .jumbotron h1 {
     color: #fff;
@@ -121,7 +140,24 @@ footer {
 }
 
 .cta {
-    background-color: rgb(117, 179, 143);
+    /*background-color: rgb(117, 179, 143);*/
+    /* IE10+ */ 
+background-image: -ms-linear-gradient(left, #26A65B 0%, #75B38F 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(left, #26A65B 0%, #75B38F 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(left, #26A65B 0%, #75B38F 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #26A65B), color-stop(100, #75B38F));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(left, #26A65B 0%, #75B38F 100%);
+
+/* W3C Markup */ 
+background-image: linear-gradient(to right, #26A65B 0%, #75B38F 100%);
     height: 300px;
     text-align: center
 }
@@ -233,7 +269,11 @@ footer {
     margin-left: 15px;
 }
 
-
+.footer-links a:hover {
+    color: rgb(150,150,150);
+    border-bottom: 1px solid #ed6f00;
+    text-decoration: none;
+} 
 
 .social_facebook {
     font-size: 20px;
@@ -242,6 +282,16 @@ footer {
     margin-right: 10px;
 }
 
+.social_twitter:hover {
+    color: #ed6f00;
+}
+
+.social_facebook:hover {
+    color: #ed6f00;
+}
+.social_instagram:hover {
+    color: #ed6f00;
+}
 .social_twitter {
     font-size: 20px;
     color:rgb(150,150,150);
@@ -308,9 +358,9 @@ footer {
 
 .navbar-default .navbar-nav>li>a:hover{
     color: rgb(150,150,150);
-
-
 }
+}
+
 
 @media (max-width: 855px) {
   
@@ -320,9 +370,6 @@ footer {
     font-family: 'Roboto';
     font-weight: 300;
 }
-
-} 
-
 
 .row {
     margin: 0px;

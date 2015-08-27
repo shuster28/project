@@ -17,7 +17,23 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color:rgba(38,166,91,1);
+  /* IE10+ */ 
+background-image: -ms-linear-gradient(left, #26A65B 0%, #75B38F 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(left, #26A65B 0%, #75B38F 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(left, #26A65B 0%, #75B38F 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #26A65B), color-stop(100, #75B38F));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(left, #26A65B 0%, #75B38F 100%);
+
+/* W3C Markup */ 
+background-image: linear-gradient(to right, #26A65B 0%, #75B38F 100%);
 }
 
 .login-form {
