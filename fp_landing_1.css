@@ -116,12 +116,12 @@ li a {
 }
 
 footer {
-    background-color: #000;
-    height: 180px
+    background-color: #fff;
+    height: 120px
 }
 
 .cta {
-    background-color: #26A65B;
+    background-color: rgb(117, 179, 143);
     height: 300px;
     text-align: center
 }
@@ -223,7 +223,7 @@ footer {
     margin-top: 25px
 }
 .footer-logo .navbar-brand {
-    background-image: url("fp_landing_images/chachinglogo.png");
+    background-image: url("fp_landing_images/chachinglogoalt.png");
     text-indent: -9999px;
     font-size: 0;
     width: 100px;
@@ -237,34 +237,39 @@ footer {
 
 .social_facebook {
     font-size: 20px;
-    color: white;
+    color: rgb(150,150,150);
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .social_twitter {
     font-size: 20px;
-    color: white;
+    color:rgb(150,150,150);
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .social_instagram {
     font-size: 20px;
-    color: white;
+    color: rgb(150,150,150);
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .footer-social {
-    float: right;
+    float: none;
     margin-right: 10px;
     margin-top: 26px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
+/*.footer-social ul {
+    text-align: center;
+}*/
+
 .footer-links a{
-    color: white;
+    color: rgb(150,150,150);
     font-size: 18px;
     font-family: 'Roboto';
     float: left;
@@ -280,8 +285,8 @@ footer {
 .footer-links li {
     display: inline-block;
     list-style-type: none;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
      font-weight: 300;
 }
 
@@ -307,56 +312,17 @@ footer {
 
 }
 
-@media (max-width: 600px){
-.col-xs-12 .navbar-brand {
-    margin-left: 42%;  
-}
-
-@media (max-width: 500px){
-.col-xs-12 .navbar-brand {
-    margin-left: 41%;  
-}
-
-@media (max-width: 400px){
-.col-xs-12 .navbar-brand {
-    margin-left: 37%;  
-}
-
-.col-xs-12 .footer-social {
-    margin-left: 10px;
-}
-
-}
-
 @media (max-width: 855px) {
-   .footer-links li {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
+  
 .footer-links a{
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 25px; 
     font-family: 'Roboto';
     font-weight: 300;
 }
 
 } 
-/*
-.bottom-footer {
-    height: 30px;
-    background-color: black;
-    margin-bottom: 0px;
-}*/
-/*
-.bottom-footer  p{
-    color: white;
-    font-size: 12px;
-    font-family: 'Roboto';
-    font-weight: 300;
-    margin-left: 15px;
-    margin-bottom: 0px;
-}*/
+
 
 .row {
     margin: 0px;
