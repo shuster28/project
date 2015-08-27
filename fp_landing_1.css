@@ -34,8 +34,8 @@
 }
 @media (max-width: 768px) {
     .navbar-default .navbar-collapse {
-        background-color: #26a65b;
-        height: 300px
+        background-color: white;
+        height: 245px
    }
    .navbar-nav {
        display: block
@@ -121,7 +121,7 @@ footer {
 }
 
 .cta {
-    background-color: #26a65b;
+    background-color: #26A65B;
     height: 300px;
     text-align: center
 }
@@ -220,7 +220,7 @@ footer {
     height: 65px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px
+    margin-top: 25px
 }
 .footer-logo .navbar-brand {
     background-image: url("fp_landing_images/chachinglogo.png");
@@ -269,6 +269,7 @@ footer {
     font-family: 'Roboto';
     float: left;
     margin-top: 22px;  
+    font-weight: 300;
 }
 
 .footer-links ul {
@@ -296,6 +297,13 @@ footer {
 .col-xs-12 .navbar-brand {
     margin-left: 43%;
 }
+.navbar-default .navbar-nav>li>a {
+    color: rgb(150,150,150);
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: rgb(150,150,150);
+
 
 }
 
