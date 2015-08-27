@@ -19,7 +19,7 @@ $(document).ready(function(){
   /*
   * Scroll the body to a given section
   */
-  $(document).on("click", ".navbar-nav a", function(event){
+  $(document).on("click", ".navbar-center a", function(event){
     event.preventDefault();
 
     var $this = $(this);
@@ -29,7 +29,6 @@ $(document).ready(function(){
     $("body, html").animate({
       scrollTop: destination
     }, 450, "swing");
-
   });
 
 });
