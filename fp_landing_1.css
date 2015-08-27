@@ -1,0 +1,362 @@
+/*@jumbo-header: #fff;
+@footer-block: black;
+@green-color: #26A65B;
+@orange-color: #ed6f00;
+@logo: "fp_landing_images/chachinglogo.png";
+@logo-alt: "fp_landing_images/chachinglogoalt.png";
+@app-md: "fp_landing_images/appstore.png";
+@app-lg: "fp_landing_images/appstorelg.png"*/
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300');
+
+/* opaque class which will be attached on scroll */
+
+
+.jumbotron {
+    background-size: cover;
+    height: 545px;
+    background-image: url(fp_landing_images/girlusingapp2.jpg);
+    background-repeat: no-repeat;
+    background-position: center
+
+}
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    z-index: 100;
+    margin-bottom: 0;
+    border-radius: 0;
+    transition: background-color 1s ease 0s
+}
+#navbar {
+    position: relative
+}
+@media (max-width: 768px) {
+    .navbar-default .navbar-collapse {
+        background-color: #26a65b;
+        height: 300px
+   }
+   .navbar-nav {
+       display: block
+  }
+}
+@media (min-width: 768px) {
+    .navbar-center {
+        position: absolute;
+        left: 50%;
+        text-align: center;
+        margin-left: -122px!important
+   }
+}
+
+h1 {
+    font-family: 'roboto';
+}
+
+
+h2 {
+    font-family: 'roboto';
+}
+
+
+h3 {
+    font-family: 'roboto';
+}
+
+p  {
+    font-family: 'roboto';
+}
+
+li a {
+    font-family: 'roboto';
+}
+
+.navbar-default .navbar-brand {
+    background-image: url("fp_landing_images/chachinglogo.png");
+    text-indent: -9999px;
+    font-size: 0;
+    width: 100px;
+    height: 39px;
+    float: left
+}
+.navbar .container-fluid .navbar-brand {
+    margin-left: 0;
+    margin-top: 10px
+}
+.navbar-right {
+    float: right: !important;
+    margin-right: 8px
+}
+.navbar-nav {
+    margin-top: 6px;
+    margin-right: auto;
+    margin-left: auto
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    margin: 0 auto
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active {
+    color: #fff;
+    text-decoration: underline
+}
+.jumbotron h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 {
+    text-align: center
+}
+
+footer {
+    background-color: #000;
+    height: 180px
+}
+
+.cta {
+    background-color: #26a65b;
+    height: 300px;
+    text-align: center
+}
+.navbar.opaque {
+    background-color: #fff;
+    background: #fff;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px #969696
+}
+.navbar.opaque .navbar-brand {
+    background-image: url("fp_landing_images/chachinglogoalt.png");
+    width: 100px;
+    height: 39px;
+    float: left;
+    transition: color 1s ease 0s
+}
+.navbar.opaque .navbar-nav>li>a {
+    color: #969696;
+    transition: color 1s ease 0s
+}
+.navbar.opaque .navbar-nav>li>a:active {
+    text-decoration: underline
+}
+.btn-outline {
+    color: orange;
+    border: 1px solid orange
+}
+.featurette-divider {
+    margin: 65px 0
+}
+.btn-md {
+    background-color: #ed6f00;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 0;
+    border: 0;
+    margin-top: 8px;
+    margin-right: 6px
+}
+.btn-md:visited {
+    background-color: #ed6f00;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 0;
+    border: 0;
+    margin-top: 8px;
+    margin-right: 6px
+}
+.btn-md:hover {
+    background-color: #26a65b;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 0;
+    border: 0;
+    margin-top: 8px;
+    margin-right: 6px
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    width: 26px;
+    height: 3px
+}
+.navbar-default .navbar-toggle {
+    border: 0
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent
+}
+.navbar.opaque .icon-bar {
+    background-color: #26a65b
+}
+.icon_piechart {
+    font-size: 130px;
+    color: #26a65b
+}
+.icon_lock-open_alt {
+    font-size: 130px;
+    color: #26a65b
+}
+.icon_folder-open_alt {
+    font-size: 130px;
+    color: #26a65b
+}
+.downloadapp {
+    background-image: url("fp_landing_images/appstore.png");
+    width: 200px;
+    height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px
+}
+
+.downloadapp2 {
+    background-image: url("fp_landing_images/appstore.png");
+    width: 200px;
+    height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px
+}
+.footer-logo .navbar-brand {
+    background-image: url("fp_landing_images/chachinglogo.png");
+    text-indent: -9999px;
+    font-size: 0;
+    width: 100px;
+    height: 39px;
+    float: left;
+    margin-top:15px;
+    margin-left: 15px;
+}
+
+
+
+.social_facebook {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social_twitter {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social_instagram {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-social {
+    float: right;
+    margin-right: 10px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+
+.footer-links a{
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto';
+    float: left;
+    margin-top: 22px;  
+}
+
+.footer-links ul {
+    text-align: center;
+    padding-left: 0px;
+}
+
+.footer-links li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+     font-weight: 300;
+}
+
+
+@media (max-width: 767px){
+.col-xs-12 .footer-social {
+    float: none;
+    margin-left: 7px;
+     }
+.col-xs-12 .footer-social {
+    text-align: center;
+}
+.col-xs-12 .navbar-brand {
+    margin-left: 43%;
+}
+
+}
+
+@media (max-width: 600px){
+.col-xs-12 .navbar-brand {
+    margin-left: 42%;  
+}
+
+@media (max-width: 500px){
+.col-xs-12 .navbar-brand {
+    margin-left: 41%;  
+}
+
+@media (max-width: 400px){
+.col-xs-12 .navbar-brand {
+    margin-left: 37%;  
+}
+
+.col-xs-12 .footer-social {
+    margin-left: 10px;
+}
+
+}
+
+@media (max-width: 855px) {
+   .footer-links li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-links a{
+    font-size: 13px;
+    margin-top: 25px; 
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+} 
+/*
+.bottom-footer {
+    height: 30px;
+    background-color: black;
+    margin-bottom: 0px;
+}*/
+/*
+.bottom-footer  p{
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}*/
+
+.row {
+    margin: 0px;
+}
+
+#cta-text p{
+    font-family: 'roboto';
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 40px;
+}
